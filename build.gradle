@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+}
+
+//subprojects {
+//    apply plugin: 'java'
+//    dependencies {
+//        testCompile group: 'junit', name: 'junit', version: '4.12'
+//    }
+//}
+//
+//project(':QueueTest') {
+//    dependencies {
+//        implementation project(':ListStructure')
+//    }
+//}
+//
+//project(':StackTest') {
+//    dependencies {
+//        compile project(':ListStructure')
+//    }
+//}
+
+//
+//project(':HashTest') {
+//    dependencies {
+//        compileOnly project(':multi-module-database')
+//    }
+//}
+//
+//project(':multi-module-batch') {
+//    dependencies {
+//        compileOnly project(':multi-module-database')
+//    }
+//}
+//
+//project(':multi-module-database') {
+//    bootJar { enabled = false }
+//    jar { enabled = true }
+//}
